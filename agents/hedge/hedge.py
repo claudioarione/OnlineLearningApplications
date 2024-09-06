@@ -16,3 +16,4 @@ class HedgeAgent:
 
     def update(self, l_t):
         self.weights *= np.exp(-self.learning_rate*l_t)
+        self.t += 1

@@ -30,3 +30,12 @@ def compute_weights(rho, rewards, costs):
 
 def extract(pos, lst):
   return [item[pos] for item in lst]
+
+def extract_winners(placement, p, lst):
+  p_history = []
+  for item in lst:
+    if p in item and item.index(p) == (placement-1): #Placement = 1 is first place, Placement = 2 is second place
+      p_history.append(1)
+    else:
+      p_history.append(0)
+  return p_history

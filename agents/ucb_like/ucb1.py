@@ -1,5 +1,4 @@
 import numpy as np
-from utils.util_functions import compute_weights
 
 class UCB1Agent:
     def __init__(self, bids_set,valuation, budget, T, range=1):
